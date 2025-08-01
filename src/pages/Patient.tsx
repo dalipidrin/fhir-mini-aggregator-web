@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Input from "../components/Input";
-import PatientMetrics from "../components/PatientMetrics";
+import Input from "../components/input/Input";
+import PatientMetrics from "../components/patientmetrics/PatientMetrics";
 import { fetchPatientMetrics } from "../webservices/PatientMetricsService";
 
 export default function Patient() {
