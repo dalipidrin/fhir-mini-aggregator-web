@@ -12,7 +12,7 @@ const JWT_TOKEN = "HARDCODED_JWT_TOKEN";
  * @returns {Promise<Object>} - Patient metrics JSON from the API.
  * @throws an error if the request fails.
  */
-export async function fetchPatientMetrics(patientId: any) {
+export async function fetchPatientMetrics(patientId: string): Promise<any> {
   try {
     const response = await axios.get(`${BASE_URL}/patients/${patientId}/metrics`, {
       headers: {

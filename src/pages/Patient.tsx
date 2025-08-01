@@ -8,7 +8,7 @@ export default function Patient() {
   const [metrics, setMetrics] = useState(null);
   const [error, setError] = useState("");
 
-  const handleFetch = async (patientId) => {
+  const handleFetch = async (patientId: string) => {
     try {
       setError("");
       const data = await fetchPatientMetrics(patientId);

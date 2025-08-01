@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./Input.css";
 
-export default function Input({ onSubmit }) {
+export default function Input({ onSubmit }: { onSubmit: (patientId: string) => void }) {
   const [patientId, setPatientId] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (patientId.trim()) {
       onSubmit(patientId.trim());
