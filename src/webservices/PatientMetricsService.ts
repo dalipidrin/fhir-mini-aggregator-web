@@ -4,7 +4,7 @@ import axios from "axios";
 const BASE_URL = "http://127.0.0.1:8000";
 
 // Hardcoded JWT token. Change the value with the token that you get from `/auth` endpoint.
-const JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzU0MDU4OTMxfQ.ZP49qQa5VWV80LengQI-Upml7qXfWV9kpzJ6QMZVao0";
+const JWT_TOKEN = "HARDCODED_JWT_TOKEN";
 
 /**
  * Fetches patient metrics from the backend API.
