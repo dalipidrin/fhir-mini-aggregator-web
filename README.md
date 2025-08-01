@@ -23,6 +23,13 @@ data fetched from [FHIR Mini Aggregator](https://github.com/dalipidrin/fhir-mini
    npm install
    ``` 
 
+### Configuration
+
+**Note:**  
+The `PatientMetricsService` contains a hardcoded JWT token (`HARDCODED_JWT_TOKEN`). You **must** replace this token with the JWT token you 
+receive from the `/auth` endpoint before running the app, to ensure authorized access to the metrics API.
+
+
 ### Running the project
 
    ```bash
