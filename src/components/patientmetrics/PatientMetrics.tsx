@@ -1,6 +1,7 @@
 import './PatientMetrics.css';
+import type { PatientMetricsProps } from '../../models/PatientMetricsProps';
 
-export default function PatientMetrics({ data }) {
+export default function PatientMetrics({ data }: PatientMetricsProps) {
   if (!data) return null;
 
   const { patientId, observationCount, latest, averageByCode } = data;
